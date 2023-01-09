@@ -1,13 +1,9 @@
 import React from "react";
-import { Text, View, StyleSheet, ScrollView, Image, Pressable } from "react-native";
+import { Text, View, StyleSheet, ScrollView, Pressable } from "react-native";
 
 const Onboarding2 = () => {
   return <ScrollView style={styles.container}>
-      <View style={styles.header}>
-        <Image source={require("./assets/back.png")} style={styles.back} />
-        <Image source={require("./assets/slide.png")} style={styles.slide} />
-        <Text />
-      </View>
+      
 
       <View style={styles.imgContainer}>
       </View>
@@ -59,11 +55,13 @@ const styles = StyleSheet.create({
     marginBottom: 5
   },
   imgContainer: {
-    height: 460,
+    height: 260,
     width: 343,
     backgroundColor: "#E5E5EA",
     borderRadius: 10,
-    alignSelf: "center"
+    alignSelf: "center",
+    top: 10,
+    left: 0
   }
 });
 
