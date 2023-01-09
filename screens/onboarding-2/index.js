@@ -1,7 +1,9 @@
 import React from "react";
 import { Text, View, StyleSheet, ScrollView, Pressable } from "react-native";
 
-const Onboarding2 = () => {
+const Onboarding2 = ({
+  navigation
+}) => {
   return <ScrollView style={styles.container}>
       
 
@@ -13,7 +15,7 @@ const Onboarding2 = () => {
           There is no better advertisement  campaign that’s is low and also successful at the same time. Great business ideas.
         </Text>
       </View>
-      <Button buttonText={"Get started"} />
+      <Button buttonText={"Get started"} navigation={navigation} />
     </ScrollView>;
 };
 
@@ -74,12 +76,12 @@ const Button = params => {
   const btnText = {
     color: params.outline ? "#000" : "#fff"
   };
-  return <View style={buttonStyles.btnContainer}>
+  return <Pressable onPress={() => navigation.navigation.navigate("Appointment", {})}><View style={buttonStyles.btnContainer}>
       <Pressable style={[buttonStyles.btn, btnStyle]} onPress={params.onPress}>
         <Text style={[buttonStyles.btnText, btnText]}>{params.buttonText}</Text>
         <View style={styles.childrenContainer}>{params.children}</View>
       </Pressable>
-    </View>;
+    </View></Pressable>;
 };
 
 const buttonStyles = StyleSheet.create({
