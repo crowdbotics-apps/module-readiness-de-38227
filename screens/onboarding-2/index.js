@@ -76,12 +76,12 @@ const Button = params => {
   const btnText = {
     color: params.outline ? "#000" : "#fff"
   };
-  return <Pressable onPress={() => navigation.navigation.navigate("Appointment", {})}><View style={buttonStyles.btnContainer}>
-      <Pressable style={[buttonStyles.btn, btnStyle]} onPress={params.onPress}>
+  return <View style={buttonStyles.btnContainer}>
+      <Pressable style={[buttonStyles.btn, btnStyle]} onPress={() => params.navigation.navigate("Appointment", {})}>
         <Text style={[buttonStyles.btnText, btnText]}>{params.buttonText}</Text>
         <View style={styles.childrenContainer}>{params.children}</View>
       </Pressable>
-    </View></Pressable>;
+    </View>;
 };
 
 const buttonStyles = StyleSheet.create({
