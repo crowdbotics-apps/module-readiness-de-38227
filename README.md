@@ -61,6 +61,7 @@ This section will show any installed modules you add from the Storyboard Modules
 - [django-zoom-info](backend/modules)
 - [django-slack](backend/modules)
 - [django-hubspot](backend/modules)
+- [react-native-appointment](modules/appointment)
 
 # Getting started: Frontend
 
