@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "f2b5de8d858c2504a03c3cbbc32ed2a5da3e9dafe207979189e6018023532815"
+            "sha256": "dcc2d1eb8ee05674ac42b966ad4772f06944648ff89d251b78bb59b0b300c33f"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -55,6 +55,10 @@
             ],
             "markers": "python_version ~= '3.7'",
             "version": "==5.2.1"
+        },
+        "cb-django-hubspot": {
+            "editable": true,
+            "path": "./modules/django_hubspot"
         },
         "cb-django-slack": {
             "editable": true,
